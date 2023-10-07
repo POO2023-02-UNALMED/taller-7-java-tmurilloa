@@ -2,7 +2,7 @@ package comunicacion;
 
 public class Alfabeto extends Pictograma {
 	
-	private String[] letras = new String[26];
+	private String[] letras;
 	private String interpretacion;
 	
 	public Alfabeto(String origen, String[] letras, String interpretacion) {
@@ -12,7 +12,7 @@ public class Alfabeto extends Pictograma {
 	}
 	
 	public int cantidadLetras() {
-		return 26;
+		return letras.length;
 	}
 	
 	public String interpretacion() {
